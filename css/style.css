@@ -1,0 +1,82 @@
+/* roboto-regular - latin */
+@font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Roboto'), local('Roboto-Regular'),
+         url('../fonts/roboto-v20-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('../fonts/roboto-v20-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+  html{
+    box-sizing: border-box;
+}
+*, *::before, *::after{
+    box-sizing: inherit;
+}
+body{
+  margin: 0;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+}
+
+.profile {
+}
+.profile__card {
+   flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(4, 200px 300px 80px 1fr);
+    grid-template-rows: 2;
+
+}
+.profile__avatar {
+  max-height: 200px;
+
+}
+.profile__nick-name {
+  background:#28C772;
+  height: 51px;
+  margin-top: 149px;
+  padding-left: 25px;
+  border: 1px solid #000000;
+  position: relative;
+}
+
+.profile__nick-name::after {
+display: block;
+content: '';
+top: 0;
+left: -1px;
+width: 4px;
+height: 50px;
+border: 1px solid #000000;
+background: #FF9F21;
+position: absolute;
+}
+
+.profile__nick-name-text{
+  font-size: 36px;
+  line-height: 51px;
+  text-transform: uppercase;
+  color: #010E28;
+  text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+}
+  
+
+.profile__tr{
+background:transparent;
+}
+
+.profile__nick {
+  background:#010E28;;
+  grid-row: 2/3;
+  grid-column-start: 1;
+  grid-column-end:4;
+  min-height: 90px;
+}
+.profile__naming{
+  padding-left: 32px;
+  font-size: 36px;
+  line-height: 90px;
+  color: #FFFFFF;
+}
